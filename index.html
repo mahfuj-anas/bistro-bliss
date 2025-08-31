@@ -10,6 +10,17 @@
     <!-- Tailwind and Daisyui -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+         <style>
+        .playfair-display {
+            font-family: "Playfair Display", serif;
+        }
+    </style>
 </head>
 
 <body>
@@ -42,19 +53,46 @@
             </section>
         </nav>
         <!-- main naver -->
-        <nav>
-            <section>
-                <div></div>
-                <div></div>
+        <nav class="flex items-center justify-between px-40 py-5">
+            <!-- Logo -->
+            <section class="flex items-center gap-3">
+                <img src="/japanese-food.png" alt="">
+                <h3 class="text-[43px] text-[#474747] italic playfair-display font-semibold">Bistro Bliss</h3>
             </section>
 
+            <!-- NavLinks -->
             <section>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+                <ul class="flex items-center gap-2">
+                    <li class="hover:bg-[#DBDFD0] w-fit px-5 py-1 rounded-full cursor-pointer font-medium">Home</li>
+                    <li class="hover:bg-[#DBDFD0] w-fit px-5 py-1 rounded-full cursor-pointer font-medium">About</li>
+                    <li class="hover:bg-[#DBDFD0] w-fit px-5 py-1 rounded-full cursor-pointer font-medium">Menu</li>
+                    <li class="hover:bg-[#DBDFD0] w-fit px-5 py-1 rounded-full cursor-pointer font-medium">Pages</li>
+                    <li class="hover:bg-[#DBDFD0] w-fit px-5 py-1 rounded-full cursor-pointer font-medium">Contact</li>
+                </ul>
+            </section>
+
+            <!-- CTA -->
+            <section>
+                <button class="font-bold border-2 py-2 px-7 rounded-full hover:bg-[#DBDFDA]">Book A Table</button>
             </section>
         </nav>
+
+        <!-- Hero Section -->
+        <section class="bg-[url(/Mask_group.png)] bg-no-repeat bg-center min-h-[802px] flex flex-col items-center justify-center w-screen">
+            <h1 class="text-[95px] m-0 flex flex-col text-center playfair-display">
+                <span class="-my-12">Best food for</span>
+                <span>your taste</span>
+            </h1>
+            <p class="py-12 text-[20px] w-[537px] text-center">
+                Discover delectable cuisine and unforgettable moments in our welcoming, culinary haven.
+            </p>
+
+            <section>
+                <button class="font-bold py-5 px-7 rounded-full bg-[#AD343E] hover:bg-[#ADADAD] text-white">Book A Table</button>
+                <button class="font-bold border-2 py-5 px-7 rounded-full hover:bg-[#DBDFDA]">Explore Menu</button>
+            </section>
+        </section>
+
     </header>
 
 
